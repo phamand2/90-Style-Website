@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+
+
+body {
+  text-align: center;
+  background-image:url('Images/Background.jpg');
+  display: block;
+  
+}
+
+p {
+  display: block;
+  font-size: 50px;
+  background-color: lightcyan;
+}
+
+marquee {
+  overflow: hidden;
+  text-align: initial;
+  white-space: nowrap;
+  font-size: 35px;
+  background-color: lightcyan;
+}
+
+#bell {
+  font-size: 3em;
+  background-color:rgb(253, 192, 255);
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+
+.counter {
+  background-color: green;
+  
+}
+
